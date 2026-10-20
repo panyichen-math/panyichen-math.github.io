@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Panyi Chen (陈攀屹), graduate student in probability at Beijing Normal University. Research, preprints, and mathematical notes.">
+  <meta name="author" content="Panyi Chen">
+  <meta name="theme-color" content="#fbfaf7">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Panyi Chen | Probability · Beijing Normal University">
+  <meta property="og:description" content="Graduate student in probability. Research, preprints, and mathematical notes.">
+  <meta property="og:url" content="https://panyichen-math.github.io/">
+  <link rel="canonical" href="https://panyichen-math.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2329463f'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='39' fill='%23ffffff'%3EP%3C/text%3E%3C/svg%3E">
+  <title>Panyi Chen | Probability · Beijing Normal University</title>
+  <style>
+    :root{--paper:#fbfaf7;--ink:#242c2a;--muted:#646d67;--accent:#27594c;--line:#dcded6;--soft:#f0f2eb;--serif:Georgia,"Times New Roman","Noto Serif SC","Songti SC",SimSun,serif;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"Noto Sans SC",sans-serif}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:35px}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 var(--sans);-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:4px}
+    a:hover{color:#152e27;text-decoration:underline}
+    a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:5px;border-radius:2px}
+    ::selection{background:#dbe9dd}
+    .skip{position:absolute;left:16px;top:-80px;padding:10px 16px;background:var(--ink);color:#fff;z-index:10}
+    .skip:focus{top:12px}
+    .page{max-width:1080px;margin:auto;padding:0 52px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:30px 0 22px;border-bottom:1px solid var(--line)}
+    .wordmark{font:19px var(--serif);letter-spacing:.01em;text-decoration:none;color:var(--ink);white-space:nowrap}
+    nav{display:flex;gap:27px;flex-wrap:wrap;font-size:13px;letter-spacing:.025em}
+    nav a{text-decoration:none;color:var(--muted)}
+    .layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:70px;padding-top:67px}
+    aside{padding-top:5px}
+    .identity{position:sticky;top:34px}
+    .discipline{margin:0 0 19px;text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:600;color:var(--accent)}
+    h1{font:normal 40px/1.15 var(--serif);letter-spacing:-1.2px;margin:0 0 9px}
+    .chinese{font:21px/1.5 var(--serif);letter-spacing:.14em;color:var(--muted);margin:0 0 25px}
+    .role{font-size:14px;font-weight:600;margin:0 0 8px}
+    .affiliation{font-size:14px;line-height:1.65;color:var(--muted);margin:0}
+    .identity-links{border-top:1px solid var(--line);margin-top:27px;padding-top:18px;display:flex;flex-direction:column;align-items:flex-start;gap:7px;font-size:13px}
+    .identity-links a{text-decoration:none;overflow-wrap:anywhere}
+    .location{font-size:12px;color:var(--muted);margin-top:20px}
+    main{min-width:0}
+    section{margin-bottom:44px;scroll-margin-top:35px}
+    h2{font:normal 28px/1.3 var(--serif);letter-spacing:-.45px;margin:0 0 21px}
+    .about p{margin:0 0 16px}
+    .about .intro{font-size:17px;line-height:1.8}
+    .section-heading{display:flex;align-items:baseline;gap:20px;border-bottom:1px solid var(--line);margin-bottom:22px}
+    .section-heading h2{margin-bottom:13px}
+    .section-heading .note{font-size:12px;color:var(--muted)}
+    .paper-meta{font-size:11px;color:var(--muted);letter-spacing:.11em;text-transform:uppercase;margin:0 0 9px}
+    h3{font:normal 22px/1.45 var(--serif);letter-spacing:-.15px;margin:0 0 10px}
+    h3 a{color:var(--ink);text-decoration:none}
+    .authors{font-size:14px;margin:0 0 13px;color:var(--muted)}
+    .authors strong{font-weight:500;color:var(--ink)}
+    .paper-description{font-size:14px;line-height:1.8;margin:0 0 18px}
+    .paper-links{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    .button-link{display:inline-flex;align-items:center;gap:8px;padding:5px 12px;border:1px solid var(--line);border-radius:3px;font-size:12px;text-decoration:none;line-height:1.5;background:transparent}
+    .button-link:hover{background:var(--soft);text-decoration:none;border-color:#a6b8ad}
+    .button-link.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .button-link.primary:hover{background:#1e443a}
+    .external{font-family:var(--sans);font-size:13px;line-height:1}
+    details{margin-top:16px;font-size:12px}
+    summary{cursor:pointer;color:var(--accent);width:fit-content;padding:3px 0}
+    pre{background:var(--soft);border-left:2px solid #a6b8ad;padding:16px;line-height:1.6;font-size:11px;white-space:pre-wrap;overflow-wrap:anywhere;border-radius:0 3px 3px 0;margin-bottom:0}
+    .resource h3{font-size:21px;margin-bottom:8px}
+    .resource p{font-size:14px;margin:0 0 12px}
+    .resource .resource-link{font-size:13px;text-decoration:none}
+    .contact p{font-size:14px;margin:0 0 9px}
+    .contact .address{color:var(--muted);font-size:13px}
+    footer{margin-top:14px;border-top:1px solid var(--line);padding:20px 0 28px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:11px;letter-spacing:.02em}
+    footer a{color:var(--muted);text-decoration:none}
+    @media(min-width:1200px){.page{padding:0 42px}.layout{gap:80px}}
+    @media(max-width:780px){.page{padding:0 30px}.layout{grid-template-columns:190px minmax(0,1fr);gap:35px;padding-top:44px}h1{font-size:34px}nav{gap:18px}.identity-links{font-size:12px}}
+    @media(max-width:620px){.page{padding:0 23px}.topbar{padding:22px 0 18px;align-items:flex-start;gap:18px}.wordmark{font-size:17px}nav{gap:10px 17px;justify-content:flex-end;font-size:12px}.layout{display:block;padding-top:34px}.identity{position:static}.discipline{margin-bottom:12px}h1{font-size:41px}.chinese{margin-bottom:17px;font-size:20px}.affiliation{max-width:310px}.identity-links{flex-direction:row;flex-wrap:wrap;column-gap:21px;margin-top:20px;padding-top:14px;font-size:13px}.location{margin-top:12px}aside{margin-bottom:40px}h2{font-size:26px}.about .intro{font-size:16px}section{margin-bottom:36px}h3{font-size:21px}footer{font-size:10px;gap:14px}.section-heading{gap:14px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{body{background:#fff;font-size:11pt}.page{max-width:none;padding:0}.topbar,.skip,details,footer{display:none}.layout{padding-top:0;grid-template-columns:180px 1fr;gap:30px}.identity{position:static}section{break-inside:avoid}a{color:#222}.button-link{border:none;padding:0}h1{font-size:28pt}h2{font-size:20pt}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="topbar">
+      <a class="wordmark" href="#">Panyi Chen</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#preprints">Preprints</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <div class="layout">
+      <aside aria-label="Profile">
+        <div class="identity">
+          <p class="discipline">Probability</p>
+          <h1>Panyi Chen</h1>
+          <p class="chinese" lang="zh-Hans">陈攀屹</p>
+          <p class="role">Graduate student</p>
+          <p class="affiliation">School of Mathematical Sciences<br>Beijing Normal University</p>
+          <div class="identity-links">
+            <a href="mailto:panyichen@mail.bnu.edu.cn">panyichen@mail.bnu.edu.cn</a>
+            <a href="https://github.com/panyichen-math">GitHub <span class="external" aria-hidden="true">↗</span></a>
+          </div>
+          <p class="location">Beijing, China</p>
+        </div>
+      </aside>
+      <main id="main">
+        <section class="about" id="about" aria-labelledby="about-title">
+          <h2 id="about-title">About</h2>
+          <p class="intro">I am a graduate student in probability at the <a href="https://math.bnu.edu.cn/">School of Mathematical Sciences</a>, Beijing Normal University, advised by <a href="https://math.bnu.edu.cn/jzg/bmfl/gsljys/213010.htm">Professor Mei Zhang</a>.</p>
+          <p>My current research concerns branching processes in random environments and the asymptotic behavior of their martingale limits. My broader interests include stochastic analysis and random fields.</p>
+        </section>
+        <section id="preprints" aria-labelledby="preprints-title">
+          <div class="section-heading"><h2 id="preprints-title">Preprints</h2></div>
+          <article class="paper">
+            <p class="paper-meta">2026 · arXiv:2610.25848</p>
+            <h3><a href="https://arxiv.org/abs/2610.25848">Left tail asymptotics for the density of supercritical branching processes in random environment</a></h3>
+            <p class="authors"><strong>Panyi Chen</strong> and <a href="https://math.bnu.edu.cn/jzg/bmfl/gsljys/213010.htm">Mei Zhang</a></p>
+            <p class="paper-description">We study the martingale limit of a supercritical branching process in a random environment. Under suitable moment, boundedness, and non-lattice assumptions, we establish a continuous annealed density and precise power-law asymptotics near zero for both the distribution function and the density.</p>
+            <div class="paper-links">
+              <a class="button-link primary" href="https://arxiv.org/abs/2610.25848">arXiv <span class="external" aria-hidden="true">↗</span></a>
+              <a class="button-link" href="https://arxiv.org/pdf/2610.25848">PDF <span class="external" aria-hidden="true">↗</span></a>
+            </div>
+            <details>
+              <summary>BibTeX</summary>
+              <pre><code>@misc{chen2026lefttail,
+  title = {Left tail asymptotics for the density of supercritical
+           branching processes in random environment},
+  author = {Panyi Chen and Mei Zhang},
+  year = {2026},
+  eprint = {2610.25848},
+  archivePrefix = {arXiv},
+  primaryClass = {math.PR},
+  url = {https://arxiv.org/abs/2610.25848}
+}</code></pre>
+            </details>
+          </article>
+        </section>
+        <section id="notes" aria-labelledby="notes-title">
+          <div class="section-heading"><h2 id="notes-title">Notes &amp; resources</h2></div>
+          <article class="resource">
+            <h3><a href="https://github.com/panyichen-math/Measure-and-Probability">Measure and Probability</a></h3>
+            <p>Reference solutions and supplementary notes for exercises in <em>Measure and Probability</em> by Shijian Yan and Xiufang Liu, including corrections, alternative proofs, and further discussion.</p>
+            <a class="resource-link" href="https://github.com/panyichen-math/Measure-and-Probability">View the notes on GitHub <span class="external" aria-hidden="true">↗</span></a>
+          </article>
+        </section>
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+          <div class="section-heading"><h2 id="contact-title">Contact</h2></div>
+          <p><a href="mailto:panyichen@mail.bnu.edu.cn">panyichen@mail.bnu.edu.cn</a></p>
+          <p class="address">School of Mathematical Sciences<br>Beijing Normal University<br>Beijing, China</p>
+        </section>
+      </main>
+    </div>
+    <footer><span>© 2026 Panyi Chen</span><span>Last updated: October 2026 · <a href="#">Back to top ↑</a></span></footer>
+  </div>
+</body>
+</html>
