@@ -67,7 +67,10 @@
     .seminar-intro .uid{color:var(--muted);font-size:12px;white-space:nowrap}
     .seminar-session{border:1px solid var(--line);border-radius:3px;padding:19px 22px}
     .seminar-session + .seminar-session{margin-top:16px}
-    .seminar-session h3{font-size:21px;margin-bottom:14px}
+    .seminar-series{margin:26px 0 0}
+    .seminar-series + .seminar-series{margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+    .seminar-series > h3{margin-bottom:18px}
+    .seminar-session h4{font:normal 19px/1.45 var(--serif);letter-spacing:-.1px;margin:0 0 14px}
     .session-details{display:grid;grid-template-columns:112px minmax(0,1fr);gap:9px 16px;font-size:14px;line-height:1.65;margin:0}
     .session-details dt{color:var(--muted)}
     .session-details dd{margin:0;min-width:0}
@@ -97,7 +100,7 @@
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#preprints">Preprints</a>
-        <a href="#gff-seminar">GFF seminar</a>
+        <a href="#seminars">Seminars</a>
         <a href="#notes">Notes</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -149,29 +152,34 @@
             </details>
           </article>
         </section>
-        <section id="gff-seminar" aria-labelledby="gff-title">
+        <section id="seminars" aria-labelledby="seminars-title">
           <div class="section-heading seminar-heading">
-            <h2 id="gff-title">GFF seminar</h2>
-            <span class="note" lang="zh-Hans">GFF 讨论班</span>
+            <h2 id="seminars-title">Seminars</h2>
+            <span class="note" lang="zh-Hans">讨论班</span>
           </div>
+          <p class="seminar-intro">I organize these online seminars independently; they are not official institutional events.</p>
           <p class="seminar-intro">Recordings will be posted on my <a href="https://space.bilibili.com/437158557">Bilibili page <span class="external" aria-hidden="true">↗</span></a> <span class="uid">(UID: 437158557)</span>.</p>
-          <!-- Add one seminar-session article per meeting, with its own date, time, meeting ID and notes link. -->
-          <article class="seminar-session" id="gff-session-1" aria-labelledby="gff-session-1-title">
-            <h3 id="gff-session-1-title">Session 1</h3>
-            <dl class="session-details">
-              <dt>Date</dt>
-              <dd><time datetime="2026-10-25">25 October 2026</time></dd>
-              <dt>Time</dt>
-              <dd><time datetime="2026-10-25T18:00:00+08:00">18:00</time>–<time datetime="2026-10-25T20:00:00+08:00">20:00</time> <span class="session-timezone">(GMT+8:00)</span></dd>
-              <dt>Tencent Meeting</dt>
-              <dd class="meeting-id">726875914</dd>
-              <dt>Lecture notes</dt>
-              <dd>
-                <!-- When ready, replace this button with a download link to this session's PDF. -->
-                <button class="button-link notes-pending" id="gff-session-1-notes" type="button" disabled aria-label="Session 1 lecture notes (PDF) — coming soon">PDF · coming soon</button>
-              </dd>
-            </dl>
-          </article>
+          <!-- Add a separate seminar-series section for each topic. -->
+          <section class="seminar-series" id="gff-seminar" aria-labelledby="gff-title">
+            <h3 id="gff-title">Gaussian Free Fields and Liouville Quantum Gravity</h3>
+            <!-- Add one seminar-session article per meeting, with its own date, time, meeting ID and notes link. -->
+            <article class="seminar-session" id="gff-session-1" aria-labelledby="gff-session-1-title">
+              <h4 id="gff-session-1-title">Session 1</h4>
+              <dl class="session-details">
+                <dt>Date</dt>
+                <dd><time datetime="2026-10-25">25 October 2026</time></dd>
+                <dt>Time</dt>
+                <dd><time datetime="2026-10-25T18:00:00+08:00">18:00</time>–<time datetime="2026-10-25T20:00:00+08:00">20:00</time> <span class="session-timezone">(GMT+8:00)</span></dd>
+                <dt>Tencent Meeting</dt>
+                <dd class="meeting-id">726875914</dd>
+                <dt>Lecture notes</dt>
+                <dd>
+                  <!-- When ready, replace this button with a download link to this session's PDF. -->
+                  <button class="button-link notes-pending" id="gff-session-1-notes" type="button" disabled aria-label="Session 1 lecture notes (PDF) — coming soon">PDF · coming soon</button>
+                </dd>
+              </dl>
+            </article>
+          </section>
         </section>
         <section id="notes" aria-labelledby="notes-title">
           <div class="section-heading"><h2 id="notes-title">Notes &amp; resources</h2></div>
